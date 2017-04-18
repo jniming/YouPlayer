@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\android_studio2\\YouPlayer - shejiao\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\vpi__light_theme.xml",
+        "source": "E:\\android_studio2\\YouPlayer - shejiao\\library\\build\\intermediates\\bundles\\debug\\res\\color\\vpi__light_theme.xml"
+    },
+    {
+        "merged": "E:\\android_studio2\\YouPlayer - weiyun\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\vpi__dark_theme.xml",
+        "source": "E:\\android_studio2\\YouPlayer - weiyun\\library\\build\\intermediates\\bundles\\debug\\res\\color\\vpi__dark_theme.xml"
+    },
+    {
+        "merged": "E:\\android_studio2\\YouPlayer - shejiao\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\vpi__dark_theme.xml",
+        "source": "E:\\android_studio2\\YouPlayer - shejiao\\library\\build\\intermediates\\bundles\\debug\\res\\color\\vpi__dark_theme.xml"
+    },
+    {
+        "merged": "E:\\android_studio2\\YouPlayer - weiyun\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\vpi__light_theme.xml",
+        "source": "E:\\android_studio2\\YouPlayer - weiyun\\library\\build\\intermediates\\bundles\\debug\\res\\color\\vpi__light_theme.xml"
+    }
+]

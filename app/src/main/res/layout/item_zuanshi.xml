@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3.5dp"
+    android:layout_marginRight="3.5dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/write">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <include
+            android:id="@+id/zs_img"
+            layout="@layout/simpledraweeview"
+            android:layout_width="match_parent"
+            android:layout_height="156.0dip"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/item_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/vip_zuan" />
+
+        <TextView
+            android:padding="8dp"
+            android:id="@+id/zs_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zs_img"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="更新至:第2531期(今日更新)"
+            android:textColor="@color/main_left_txt_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

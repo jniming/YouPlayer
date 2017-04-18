@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/write">
+
+    <ScrollView android:id="@+id/youbo_scoll"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:image_scale_type="fit_xy"
+                    app:indicator_height="5dp"
+                    app:indicator_width="5dp"
+                    app:title_height="@dimen/benner_height"
+                    app:title_textcolor="@color/write" />
+
+                <ImageView
+                    android:id="@+id/left_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/common_logo_play" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:background="#eeeeee"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_dl" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="视频体验区"
+                    android:textColor="@color/base_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/yb_recyview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:paddingLeft="3.5dp"
+                android:paddingRight="3.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="购买黄金会员,万部精彩视频等你看"
+                android:textColor="@color/main_left_txt_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

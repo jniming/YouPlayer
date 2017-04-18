@@ -1,0 +1,67 @@
+<resources>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/alert_show</item>
+        <item name="android:windowExitAnimation">@anim/alert_close</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="alert">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 灰度 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="mProgress_circle">
+        <item name="android:indeterminateDrawable">@drawable/progress_circle_shape</item>
+        <item name="android:minWidth">25dp</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:maxHeight">60dp</item>
+    </style>
+
+    <style name="StyledIndicators" parent="AppTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="@style/Widget.TabPageIndicator">
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8.0dip</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">8.0dip</item>
+
+
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+
+    <style name="alert_activity" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+</resources>

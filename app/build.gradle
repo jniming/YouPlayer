@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.1"
+    defaultConfig {
+        applicationId "com.ypsyyzip.mlidbvgnr"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+//        manifestPlaceholders = [MASKEY_VALUE: "64e9c7a9-0c11-43c1-ba9c-88de309abf4b"]
+    }
+
+    //默认使用armeabi加载so
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include 'armeabi'
+//            universalApk false
+//        }
+//    }
+//    多渠道打包
+    productFlavors {
+        '782542e8-bc46-4980-a9a4-0e39ea4f953a' {}    //戴1
+        '92ace9c4-c87e-4a0c-9715-792714d86acb' {}    //戴1
+        'e3003677-7ea2-438e-992a-37f628cd96eb' {}    //戴1
+        'c89e2fae-ecac-4d5a-917c-aef0693367f2' {}    //戴1
+        'acc705d6-cae1-4560-a48a-0d0ef3edbc91' {}    //戴1
+        '5d0989df-2e46-480a-b064-5d55f00c1910' {}    //戴1
+        'b7089c9c-1125-4f52-b1ae-16be1183e610' {}    //戴1
+
+
+    }
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [MASKEY_VALUE: name]
+    }
+
+
+    buildTypes {
+        release {
+            // 移除无用的resource文件
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+apply plugin: 'com.neenbedankt.android-apt'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //添加内容解析转换器
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.youth.banner:banner:1.4.2'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.0.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    compile 'com.squareup.okio:okio:1.6.0'
+    compile 'io.reactivex:rxjava:1.2.0'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile project(':Indicator')
+    compile project(':paylibrary')
+}

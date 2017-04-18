@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3.5dp"
+    android:layout_marginRight="3.5dp"
+    android:background="@color/write"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/wuma_video_img"
+            android:layout_width="172.0dip"
+            android:layout_height="156.0dip"
+            fresco:actualImageScaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            fresco:placeholderImage="@drawable/faild_home_gride" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_vip_small" />
+
+        <TextView
+            android:id="@+id/wuma_video_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wuma_video_img"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="更新至:第2531期(今日更新)"
+            android:textColor="@color/main_left_txt_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

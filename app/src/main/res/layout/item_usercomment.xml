@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:background="@color/layout_bg"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/userimgurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看资料"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ritght"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tx"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/reping" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img"
+            android:text="杀手不太冷" />
+
+        <TextView
+            android:id="@+id/disten_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:text="9分钟" />
+
+        <TextView
+            android:id="@+id/ti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/disten_text"
+            android:text="20.0km" />
+
+        <TextView
+            android:id="@+id/comment_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img"
+            android:layout_below="@id/img"
+            android:layout_marginTop="20dp"
+            android:text="窝草,怎么天天看这种东西,受不了了" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/now_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ritght"
+        android:layout_marginTop="10dp"
+        android:text="2016-11-14 16:28:37" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ritght"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/zimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_vote_checked" />
+
+        <TextView
+            android:id="@+id/zzz_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/zimg"
+            android:text="408" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/icon_nav"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/main_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/main_log" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/main_left_btn"
+            android:text="夜夜快播"
+            android:textColor="@color/write"
+            android:textSize="20sp" />
+
+        <EditText
+            android:cursorVisible="false"
+            android:id="@+id/main_searh_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/app_name"
+            android:background="@drawable/edtext_bg"
+            android:drawableRight="@drawable/icon_fdj"
+            android:hint="亚洲,强奸,乱伦"
+            android:padding="5dp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/tab_layout"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_title_bar"
+        android:overScrollMode="never"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

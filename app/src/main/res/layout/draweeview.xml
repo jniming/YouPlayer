@@ -1,0 +1,10 @@
+<com.facebook.drawee.view.SimpleDraweeView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/zs_img"
+    android:layout_width="172.0dip"
+    android:layout_height="156.0dip"
+    android:layout_centerHorizontal="true"
+    fresco:actualImageScaleType="fitXY"
+    fresco:placeholderImage="@drawable/faild_home_gride"
+    fresco:progressBarAutoRotateInterval="1000"
+    fresco:progressBarImageScaleType="centerInside" />

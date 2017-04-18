@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.facebook.drawee.view.SimpleDraweeView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pianku_video_img"
+    android:layout_width="match_parent"
+    android:layout_height="162dip"
+    android:layout_gravity="center"
+    android:layout_marginTop="5dp"
+    fresco:placeholderImage="@drawable/faild_home_gride"
+    fresco:actualImageScaleType="fitXY" />
+
